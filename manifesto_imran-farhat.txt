@@ -1,0 +1,9 @@
+----------------------------------------
+Open Source Manifesto
+Author: Imran Farhat
+Date: 30 March 2026
+----------------------------------------
+
+On 30 March 2026, I believe that open source is about To express our ideas freely, without any hesitation or fear.. I use Linux in my daily work, which shows the power of community-driven software. I aspire to build kiCad Plugins for FOSSEE, IIT Bombay Internship. and share it freely with others so that knowledge and innovation can grow without restrictions.
+
+----------------------------------------
