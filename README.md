@@ -14,7 +14,7 @@ I wrote five bash scripts for this project. All of them were tested on Ubuntu 24
 
 **script2_package_inspector.sh** : Checks if Git is installed using `dpkg` and shows the package details. There's a `case` block at the bottom that prints a one-liner about whatever package you're checking. I hardcoded a few common ones like apache2, mysql, vlc.
 
-**script3_disk_auditor.sh** : Goes through a bunch of system directories like `/etc`, `/var/log`, `/home` etc and shows their size and permissions. Also checks if `/etc/gitconfig` exists since Git is my chosen software. Uses a for loop and arrays.
+**script3_disk_permission_auditor.sh** : Goes through a bunch of system directories like `/etc`, `/var/log`, `/home` etc and shows their size and permissions. Also checks if `/etc/gitconfig` exists since Git is my chosen software. Uses a for loop and arrays.
 
 **script4_log_analyzer.sh** : You give it a log file and a keyword and it counts how many times that keyword shows up. It reads the file line by line with a while loop. If you don't give it a keyword it defaults to "error". Also prints the last 5 matching lines at the end.
 
@@ -39,7 +39,7 @@ sudo apt install lsb-release
 Then clone this repo and make the scripts executable:
 
 ```
-git clone https://github.com/<your-username>/oss-audit-24BAI10276.git
+git clone https://github.com/ImranFarhat01/oss-audit-24BAI10276.git
 cd oss-audit-24BAI10276
 chmod +x *.sh
 ```
@@ -51,7 +51,7 @@ Now you can run them:
 
 ./script2_package_inspector.sh
 
-./script3_disk_auditor.sh
+./script3_disk_permission_auditor.sh
 
 ./script4_log_analyzer.sh /var/log/syslog error
 
