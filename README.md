@@ -10,21 +10,21 @@ The full project report is submitted separately as a PDF on the VITyarthi portal
 
 I wrote five bash scripts for this project. All of them were tested on Ubuntu 24.04 running in a VM. Here's what each one does:
 
-**script1_system_identity.sh** — This one just prints out basic system info like what distro you're running, kernel version, who's logged in, uptime, stuff like that. Also mentions that Linux runs under GPL v2. Pretty straightforward, mostly just uses `uname`, `whoami`, and `echo`.
+**script1_system_identity.sh** : This one just prints out basic system info like what distro you're running, kernel version, who's logged in, uptime, stuff like that. Also mentions that Linux runs under GPL v2. Pretty straightforward, mostly just uses `uname`, `whoami`, and `echo`.
 
-**script2_package_inspector.sh** — Checks if Git is installed using `dpkg` and shows the package details. There's a `case` block at the bottom that prints a one-liner about whatever package you're checking. I hardcoded a few common ones like apache2, mysql, vlc.
+**script2_package_inspector.sh** : Checks if Git is installed using `dpkg` and shows the package details. There's a `case` block at the bottom that prints a one-liner about whatever package you're checking. I hardcoded a few common ones like apache2, mysql, vlc.
 
-**script3_disk_auditor.sh** — Goes through a bunch of system directories like `/etc`, `/var/log`, `/home` etc and shows their size and permissions. Also checks if `/etc/gitconfig` exists since Git is my chosen software. Uses a for loop and arrays.
+**script3_disk_auditor.sh** : Goes through a bunch of system directories like `/etc`, `/var/log`, `/home` etc and shows their size and permissions. Also checks if `/etc/gitconfig` exists since Git is my chosen software. Uses a for loop and arrays.
 
-**script4_log_analyzer.sh** — You give it a log file and a keyword and it counts how many times that keyword shows up. It reads the file line by line with a while loop. If you don't give it a keyword it defaults to "error". Also prints the last 5 matching lines at the end.
+**script4_log_analyzer.sh** : You give it a log file and a keyword and it counts how many times that keyword shows up. It reads the file line by line with a while loop. If you don't give it a keyword it defaults to "error". Also prints the last 5 matching lines at the end.
 
-**script5_manifesto_generator.sh** — This is the fun one. It asks you three questions about open source and then puts your answers together into a little manifesto paragraph. Saves it to a text file with your username in the filename.
+**script5_manifesto_generator.sh** : This is the fun one. It asks you three questions about open source and then puts your answers together into a little manifesto paragraph. Saves it to a text file with your username in the filename.
 
 ---
 
 ## How to run everything
 
-You need a Linux machine (I used Ubuntu 24.04). Make sure Git is installed — if not, just do:
+You need a Linux machine (I used Ubuntu 24.04). Make sure Git is installed : if not, just do:
 
 ```
 sudo apt install git
